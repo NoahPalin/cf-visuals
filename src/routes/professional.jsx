@@ -4,7 +4,9 @@ import { Routes, Route } from 'react-router-dom'
 function Professional() {
   return (
     <>
-
+      <div>
+        Professional
+      </div>
     </>
   )
 }

@@ -4,6 +4,9 @@ import { Routes, Route } from 'react-router-dom'
 function Personal() {
   return (
     <>
+      <div>
+        Personal
+      </div>
     </>
   )
 }
