@@ -1,22 +1,16 @@
 import { useState } from 'react'
 import './styles/App.css'
 import { Link, Routes, Route } from 'react-router-dom'
-import About from './routes/about'
-import Home from './routes/home'
-import Professional from './routes/professional'
-import Personal from './routes/personal'
+import About from './components/about'
+import Home from './components/home'
+import Nav from './components/nav'
+import Professional from './components/professional'
+import Personal from './components/personal'
 
 function App() {
   return (
     <>
-    <nav>
-      <ul>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/professional'>Professional</Link>
-        <Link to='/personal'>Personal</Link>
-      </ul>
-    </nav>
+    <Nav/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
