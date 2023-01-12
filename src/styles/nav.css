@@ -1,12 +1,48 @@
 .nav {
   display: flex;
+
+}
+
+.nav-links {
+  display: flex;
   justify-content: space-between;
 
-  margin: auto;
-  
+  margin-right: 5vw;
+  margin-left: none;
+  column-gap: 4vw;
 }
 
 .link {
   text-decoration: none;
-  color: black
+  font-size: 1.5vw;
+  color: #fff;
+  
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #747474;
+}
+
+.logo {
+  max-width: 6vw;
+
+  margin: 1vw;
+  margin-left: 5vw;
+}
+
+.title {
+  margin-left: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+
+  font-size: 3vw;
+  color: #fff;
+
 }
