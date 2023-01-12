@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './styles/App.css'
 import { Link, Routes, Route } from 'react-router-dom'
 import About from './components/about'
 import Home from './components/home'

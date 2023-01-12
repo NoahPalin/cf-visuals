@@ -8,7 +8,7 @@ function Home() {
       <div>
         Home
       </div>
-      <img src={scrubDaddy} alt='Scrub daddy photo shoot.'/>
+      {/* <img src={scrubDaddy} alt='Scrub daddy photo shoot.'/> */}
     </>
   )
 }
