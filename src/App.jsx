@@ -5,10 +5,11 @@ import Home from './components/home'
 import NavMain from './components/navbar'
 import Professional from './components/professional'
 import Personal from './components/personal'
+import './styles/app.css'
 
 function App() {
   return (
-    <>
+    <div className='main-root'>
     <NavMain/>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -16,7 +17,7 @@ function App() {
         <Route path='/professional' element={<Professional />} />
         <Route path='/personal' element={<Personal />} />
       </Routes>
-    </>
+    </div>
   )
 }
 

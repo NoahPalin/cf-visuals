@@ -1,0 +1,13 @@
+.home {
+  /* background-image: url('../src/components/images/scrub-daddy.png'); */
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: 100vw;
+
+  background-color: #252525;
+}
+
+.image {
+  
+  max-height: 50vw;
+}

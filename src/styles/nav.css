@@ -1,6 +1,9 @@
 .nav {
-  display: flex;
+  border-bottom-style: solid;
+  border-color: white;
+  border-width: 1px;
 
+  background-color: #252525;
 }
 
 .nav-links {
@@ -34,6 +37,7 @@
 
   margin: 1vw;
   margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .title {

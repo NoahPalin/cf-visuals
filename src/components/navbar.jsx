@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, Routes, Route } from 'react-router-dom'
 import '../styles/nav.css'
-import cameraLogo from './images/camera.png'
+import cameraLogo from './images/camera-2.png'
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';

@@ -1,0 +1,9 @@
+.main-root {
+  /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../src/components/images/scrub-daddy.png');
+  background-size: 100vw;
+  background-repeat: no-repeat; */
+
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
