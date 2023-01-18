@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 function Personal() {
   return (
     <>
-      <div style={{ color: 'white' }}>
+      <div style={{ color: 'blue' }}>
         Personal
       </div>
     </>
