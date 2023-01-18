@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 function Professional() {
   return (
     <>
-      <div>
+      <div style={{ color: 'white' }}>
         Professional
       </div>
     </>

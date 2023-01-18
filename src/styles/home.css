@@ -17,14 +17,21 @@
 
   position: absolute;
   padding: 1px;
+
+  transition: 1s;
 }
+.image {
+  object-fit: contain;
+  max-width: 100vw;
+
+  position: absolute;
+  padding: 1px;
+
+  transition: 1s;
+}
+
 
 /*SLIDESHOW*/
-
-#stage {
-  width: 382px;
-  height: 292px;
-}
 
 #stage a {
   position: absolute;
