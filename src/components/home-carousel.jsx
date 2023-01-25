@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import { Carousel } from 'react-bootstrap'
+import '../styles/home-carousel.css'
 
 import img2 from "./images/home-images/DSC_0106.jpg";
 import img3 from "./images/home-images/DSC_0331.jpg";
@@ -17,7 +18,7 @@ function HomeCarousel() {
     <Carousel fade>
       <Carousel.Item>
         <img
-          className="d-block w-100 slide-image"
+          className="d-block slide-image"
           src={img2}
           alt="First slide"
         />
@@ -28,7 +29,7 @@ function HomeCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 slide-image"
+          className="d-block slide-image"
           src={img3}
           alt="Second slide"
         />
@@ -40,7 +41,7 @@ function HomeCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 slide-image"
+          className="d-block slide-image"
           src={img4}
           alt="Third slide"
         />

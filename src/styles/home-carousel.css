@@ -1,0 +1,11 @@
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  scale: 2;
+}
+
+.carousel-caption {
+  font-size: 3vw;
+}
+
+.carousel-caption h3 {
+  font-size: 4vw;
+}

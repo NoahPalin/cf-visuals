@@ -6,7 +6,6 @@ import HomeCarousel from './home-carousel'
 function About() {
   return (
     <>
-      <HomeCarousel/>
     </>
   )
 }
