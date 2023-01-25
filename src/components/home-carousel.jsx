@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { Carousel } from 'react-bootstrap/Carousel'
 
 function HomeCarousel() {
@@ -6,6 +6,7 @@ function HomeCarousel() {
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
+  };
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>

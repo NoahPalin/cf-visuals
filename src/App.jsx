@@ -7,6 +7,7 @@ import Professional from './components/professional'
 import Personal from './components/personal'
 import './styles/app.css'
 
+
 function App() {
   return (
     <div className='main-root'>
