@@ -1,5 +1,10 @@
-import {React, useState} from 'react'
-import { Carousel } from 'react-bootstrap/Carousel'
+import { React, useState } from 'react'
+import { Carousel } from 'react-bootstrap'
+
+import img2 from "./images/home-images/DSC_0106.jpg";
+import img3 from "./images/home-images/DSC_0331.jpg";
+import img4 from "./images/home-images/scrub-daddy.png";
+import img5 from "./images/home-images/DSC_0164.jpg";
 
 function HomeCarousel() {
   const [index, setIndex] = useState(0);
@@ -9,11 +14,11 @@ function HomeCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel fade>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          className="d-block w-100 slide-image"
+          src={img2}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -23,8 +28,8 @@ function HomeCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          className="d-block w-100 slide-image"
+          src={img3}
           alt="Second slide"
         />
 
@@ -35,8 +40,8 @@ function HomeCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          className="d-block w-100 slide-image"
+          src={img4}
           alt="Third slide"
         />
 
@@ -48,7 +53,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-  )
-};
+  );
+}
 
 export default HomeCarousel;

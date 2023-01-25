@@ -1,15 +1,4 @@
-.box {
-  display: flex;
-  justify-content: center;
-
-  color: white;
-  max-width: 50vw;
-
-  background-color: #363636;
-  padding: 2vw;
-
-  margin: auto;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-
+.slide-image {
+  width: 50vw !important;
+  min-height: 50vw;
 }
