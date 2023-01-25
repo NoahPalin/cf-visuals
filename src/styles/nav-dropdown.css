@@ -1,0 +1,20 @@
+#dropdown-basic-button {
+  font-size: 1.5vw;
+  color: white;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.show {
+  box-shadow: none !important;
+}
+
