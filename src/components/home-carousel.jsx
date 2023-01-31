@@ -5,7 +5,6 @@ import '../styles/home-carousel.css'
 import img2 from "./images/home-images/DSC_0106.jpg";
 import img3 from "./images/home-images/DSC_0331.jpg";
 import img4 from "./images/home-images/scrub-daddy.png";
-import img5 from "./images/home-images/DSC_0164.jpg";
 
 function HomeCarousel() {
   const [index, setIndex] = useState(0);
@@ -24,7 +23,7 @@ function HomeCarousel() {
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>Nulla vitae elit libero.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
