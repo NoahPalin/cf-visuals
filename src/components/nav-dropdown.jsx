@@ -7,7 +7,7 @@ import { Link, Routes, Route } from 'react-router-dom'
 function NavDropdown() {
   return (
     <div>
-      <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+      <DropdownButton id="dropdown-basic-button" title="Menu">
 
         <Dropdown.Item>
           <Link className='dropdown-link' to='/'>Home</Link>

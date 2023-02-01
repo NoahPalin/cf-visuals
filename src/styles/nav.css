@@ -35,6 +35,7 @@
 
 .logo {
   max-width: 6vw;
+  object-fit: contain;
 
   margin: 1vw;
   margin-left: 5vw;
