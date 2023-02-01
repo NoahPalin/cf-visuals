@@ -2,8 +2,20 @@
   scale: 2;
 }
 
+@media (max-width: 400px) {
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    scale: 1;
+  }
+}
+
 .carousel-caption {
   font-size: 3vw;
+}
+
+@media (max-width: 400px) {
+  .carousel-caption, .carousel-indicators {
+    scale: 0.75;
+  }
 }
 
 .carousel-caption h3 {
