@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import '../styles/project-layout.css'
 
 function ProjectLayout() {
