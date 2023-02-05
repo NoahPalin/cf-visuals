@@ -8,6 +8,6 @@
 
 .grid-item {
   color: white;
-  border: solid;
-  border-color: red;
+  border: dotted;
+  border-color: blue;
 }
