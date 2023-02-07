@@ -1,18 +1,30 @@
 .grid-container {
+  height: 100%;
   margin: 5vw;
+  
   display: grid;
   grid-gap: 1vw;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 50vw);
+  grid-template-rows: repeat(14, (100/14));
   grid-template-areas:
+    "image1 blank"
+    "image1 blank"
     "image1 paragraph1"
+    "image1 paragraph1"
+    "image2 paragraph1"
+    "image2 paragraph1"
     "image2 paragraph2"
-    "image3 paragraph3";
+    "image2 paragraph2"
+    "image3 paragraph2"
+    "image3 paragraph2"
+    "image3 paragraph3"
+    "image3 paragraph3"
+    "blank paragraph3"
+    "blank paragraph3";
 }
 
 img {
   width: fit-content;
-
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -30,8 +42,7 @@ img {
 
 .grid-item-2 {
   grid-area: paragraph1;
-  position: relative;
-  top: 25vw;
+  transform: translateY(25vw);
 }
 
 .grid-item-3 {
@@ -40,8 +51,8 @@ img {
 
 .grid-item-4 {
   grid-area: paragraph2;
-  position: relative;
-  top: 25vw;
+  transform: translateY(25vw);
+
 }
 
 .grid-item-5 {
@@ -50,6 +61,6 @@ img {
 
 .grid-item-6 {
   grid-area: paragraph3;
-  position: relative;
-  top: 25vw;
+  transform: translateY(25vw);
+
 }

@@ -29,6 +29,30 @@ function ProjectLayout() {
       <div className='grid-item grid-item-6'>
         paragraph3
       </div>
+      <div className='grid-item grid-item-7'>
+        paragraph3
+      </div>
+      <div className='grid-item grid-item-8'>
+        paragraph3
+      </div>
+      <div className='grid-item grid-item-9'>
+        paragraph3
+      </div>
+      <div className='grid-item grid-item-10'>
+        paragraph3
+      </div>
+      <div className='grid-item grid-item-11'>
+        paragraph3
+      </div>
+      <div className='grid-item grid-item-12'>
+        paragraph3
+      </div>
+      <div className='grid-item grid-item-13'>
+        paragraph3
+      </div>
+      <div className='grid-item grid-item-14'>
+        paragraph3
+      </div>
     </div>
   )
 }
