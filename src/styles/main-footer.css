@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  
+  height: 5vw;
+  width: 100vw;
+  background-color: 252525;
+
+  border-top-style: solid;
+  border-color: white;
+  border-width: 1px;
+
+  /* To keep footer at bottom */
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+.icon {
+  max-width: 2vw;
+  object-fit: contain;
+  fill: white
+}
