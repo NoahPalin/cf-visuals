@@ -2,8 +2,8 @@
   display: grid;
   grid-gap: 20px;
 
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(2, 50vh);
+  grid-template-columns: repeat(3, 33vh);
+  grid-template-rows: repeat(3, 33vh);
   grid-template-areas: 
     "image1 paragraph1"
     "image2 paragraph2"
@@ -12,6 +12,37 @@
 
 .grid-item {
   color: white;
-  border: dotted;
+  border: solid;
   border-color: blue;
+}
+
+.grid-item-1 {
+  grid-area: image1;
+}
+
+.grid-item-2 {
+  grid-area: paragraph1;
+  position: relative;
+  top: 13vw;
+}
+
+.grid-item-3 {
+  grid-area: image2;
+}
+
+.grid-item-4 {
+  grid-area: paragraph2;
+  position: relative;
+  top: 13vw;
+
+}
+
+.grid-item-5 {
+  grid-area: image3;
+}
+
+.grid-item-6 {
+  grid-area: paragraph3;
+  position: relative;
+  top: 13vw;
 }
