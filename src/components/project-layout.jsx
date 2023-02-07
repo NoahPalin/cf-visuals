@@ -10,47 +10,20 @@ function ProjectLayout() {
     <div className='grid-container'>
       <div className='grid-item grid-item-1'>
         image1
-        <img src={liam1}></img>
       </div>
       <div className='grid-item grid-item-2'>
         paragraph1
       </div>
       <div className='grid-item grid-item-3'>
         image2
-        <img src={liam2}></img>
       </div>
       <div className='grid-item grid-item-4'>
         paragraph2
       </div>
       <div className='grid-item grid-item-5'>
         image3
-        <img src={liam3}></img>
       </div>
       <div className='grid-item grid-item-6'>
-        paragraph3
-      </div>
-      <div className='grid-item grid-item-7'>
-        paragraph3
-      </div>
-      <div className='grid-item grid-item-8'>
-        paragraph3
-      </div>
-      <div className='grid-item grid-item-9'>
-        paragraph3
-      </div>
-      <div className='grid-item grid-item-10'>
-        paragraph3
-      </div>
-      <div className='grid-item grid-item-11'>
-        paragraph3
-      </div>
-      <div className='grid-item grid-item-12'>
-        paragraph3
-      </div>
-      <div className='grid-item grid-item-13'>
-        paragraph3
-      </div>
-      <div className='grid-item grid-item-14'>
         paragraph3
       </div>
     </div>
