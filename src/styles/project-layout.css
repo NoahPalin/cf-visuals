@@ -4,6 +4,10 @@
 
   grid-template-columns: repeat(2, 50vw);
   grid-template-rows: repeat(2, 50vh);
+  grid-template-areas: 
+    "image1 paragraph1"
+    "image2 paragraph2"
+    "image3 paragraph3";
 }
 
 .grid-item {
