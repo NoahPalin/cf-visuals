@@ -24,7 +24,7 @@
 }
 
 .icon {
-  width: 1.7vw;
+  width: 2vw;
   object-fit: contain;
   fill: rgba(255, 255, 255, 0.5);
 
@@ -45,11 +45,16 @@
 
 .writingSection {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 2vh;
+  font-size: 2vw;
 }
 
 .iconSection {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
 
+.icon-holder {
+  display: flex;
+  align-items: center;
 }
