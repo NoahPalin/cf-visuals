@@ -26,14 +26,30 @@
 .icon {
   width: 2.5vw;
   object-fit: contain;
+  fill: rgba(255, 255, 255, 0.5);
+
+  transition: 0.4s;
+}
+
+.icon1 {
+  margin-right: 2vw;
+}
+
+.icon1:hover {
+  fill: white;
+}
+
+.icon2:hover {
   fill: white;
 }
 
 .writingSection {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2vh;
 }
 
 .iconSection {
   display: flex;
   flex-direction: row;
+
 }
