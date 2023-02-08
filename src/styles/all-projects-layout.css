@@ -1,0 +1,28 @@
+.grid-container {
+  height: 100%;
+  margin: 5vw;
+  
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, fit-content);
+  grid-template-areas:
+    "smallImage1 smallImage2"
+    "largeImage1 largeImage1"
+    "smallImage3 smallImage4";
+}
+
+
+.grid-item {
+  color: orange;
+  border: solid;
+  border-color: blue;
+}
+
+.grid-item-1 {
+  grid-area: smallImage1;
+}
+
+.grid-item-2 {
+  grid-area: smallImage2;
+}

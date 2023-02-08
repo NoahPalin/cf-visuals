@@ -1,9 +1,11 @@
 import '../styles/about.css'
+import AllProjectsLayout from './all-projects-layout';
+
 
 function About() {
   return (
     <>
-    About
+    <AllProjectsLayout/>
     </>
   )
 }
