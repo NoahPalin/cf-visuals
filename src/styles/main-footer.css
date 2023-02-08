@@ -1,8 +1,9 @@
 .footer {
   display: flex;
 
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row; 
   
   height: 5vw;
   width: 100vw;
@@ -16,10 +17,23 @@
   position: relative;
   bottom: 0;
   text-align: center;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+
 }
 
 .icon {
-  max-width: 2vw;
+  width: 2.5vw;
   object-fit: contain;
-  fill: white
+  fill: white;
+}
+
+.writingSection {
+  color: white;
+}
+
+.iconSection {
+  display: flex;
+  flex-direction: row;
 }
