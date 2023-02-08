@@ -1,28 +1,38 @@
-.grid-container {
+.grid-container-main {
   height: 100%;
   margin: 5vw;
   
   display: grid;
-  grid-gap: 1vw;
-  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5vw;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, fit-content);
   grid-template-areas:
-    "smallImage1 smallImage2"
-    "largeImage1 largeImage1"
-    "smallImage3 smallImage4";
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "img7 img8 img9";
 }
 
 
-.grid-item {
-  color: orange;
-  border: solid;
-  border-color: blue;
+
+
+.grid-item-1-main {
+  grid-area: img1;
 }
 
-.grid-item-1 {
-  grid-area: smallImage1;
+.grid-item-2-main {
+  grid-area: img2;
 }
 
-.grid-item-2 {
-  grid-area: smallImage2;
+.grid-item-3-main {
+  grid-area: img3;
 }
+
+.grid-item-4-main {
+  grid-area: img4;
+}
+
+.grid-item-5-main {
+  grid-area: img5;
+}
+
+
