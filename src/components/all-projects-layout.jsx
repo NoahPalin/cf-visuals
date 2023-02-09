@@ -1,4 +1,7 @@
 import '../styles/all-projects-layout.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import liam1 from './images/photoshoots/liam-photoshoot/DSC_0044.jpg';
 import liam2 from './images/photoshoots/liam-photoshoot/DSC_0052.jpg';
 import liam3 from './images/photoshoots/liam-photoshoot/DSC_0080.jpg';
@@ -29,11 +32,26 @@ import linh7 from './images/photoshoots/linh-photoshoot/DSC_0132.jpg';
 import linh8 from './images/photoshoots/linh-photoshoot/DSC_0136.jpg';
 import linh9 from './images/photoshoots/linh-photoshoot/DSC_0156.jpg';
 
+import justin1 from './images/photoshoots/justin-josh-photoshoot/DSC_001.jpg';
+import justin2 from './images/photoshoots/justin-josh-photoshoot/DSC_0003.jpg';
+import justin3 from './images/photoshoots/justin-josh-photoshoot/DSC_0060.jpg';
+import justin4 from './images/photoshoots/justin-josh-photoshoot/DSC_0073.jpg';
+import justin5 from './images/photoshoots/justin-josh-photoshoot/DSC_0093.jpg';
+import justin6 from './images/photoshoots/justin-josh-photoshoot/DSC_0125.jpg';
+import justin7 from './images/photoshoots/justin-josh-photoshoot/DSC_0995.jpg';
+import justin8 from './images/photoshoots/justin-josh-photoshoot/DSC_1003.jpg';
+import justin9 from './images/photoshoots/justin-josh-photoshoot/josh2.jpg';
+
 
 
 
 
 function AllProjectsLayout() {
+
+  // const liamImages = [liam1, liam2, liam3, liam4, liam5, liam6, liam7, liam8, liam9];
+  // const blissImages = [bliss1, bliss2, bliss3, bliss4, bliss5, bliss6, bliss7, bliss8, bliss9];
+  // const linhImages = [linh1, linh2, linh3, linh4, linh5, linh6, linh7, linh8, linh9];
+  // const justinImages = [justin1, justin2, justin3, justin4, justin5, justin6, justin7, justin8, justin9];
 
   return (
     <>
@@ -45,37 +63,55 @@ function AllProjectsLayout() {
           </div>
         </div>
       </div>
-      <div className='grid-container-main'>
-        <img className='grid-item-main grid-item-1-main' src={liam1} alt='Liam' />
-        <img className='grid-item-main grid-item-2-main' src={liam2} alt='Liam' />
-        <img className='grid-item-main grid-item-3-main' src={liam3} alt='Liam' />
-        <img className='grid-item-main grid-item-4-main' src={liam4} alt='Liam' />
-        <img className='grid-item-main grid-item-5-main' src={liam5} alt='Liam' />
-        <img className='grid-item-main grid-item-6-main' src={liam6} alt='Liam' />
-        <img className='grid-item-main grid-item-7-main' src={liam7} alt='Liam' />
-        <img className='grid-item-main grid-item-8-main' src={liam8} alt='Liam' />
-        <img className='grid-item-main grid-item-9-main' src={liam9} alt='Liam' />
+      <div className='entire-grid-container'>
+        <div className='grid-container-main'>
 
-        <img className='grid-item-main grid-item-10-main' src={bliss1} alt='Bliss' />
-        <img className='grid-item-main grid-item-11-main' src={bliss2} alt='Bliss' />
-        <img className='grid-item-main grid-item-12-main' src={bliss3} alt='Bliss' />
-        <img className='grid-item-main grid-item-13-main' src={bliss4} alt='Bliss' />
-        <img className='grid-item-main grid-item-14-main' src={bliss5} alt='Bliss' />
-        <img className='grid-item-main grid-item-15-main' src={bliss6} alt='Bliss' />
-        <img className='grid-item-main grid-item-16-main' src={bliss7} alt='Bliss' />
-        <img className='grid-item-main grid-item-17-main' src={bliss8} alt='Bliss' />
-        <img className='grid-item-main grid-item-18-main' src={bliss9} alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={1} src={liam1} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={2} src={liam2} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={3} src={liam3} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={4} src={liam4} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={5} src={liam5} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={6} src={liam6} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={7} src={liam7} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={8} src={liam8} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={9} src={liam9} effect='blur' alt='Liam' />
 
-        <img className='grid-item-main grid-item-19-main' src={linh1} alt='Linh' />
-        <img className='grid-item-main grid-item-20-main' src={linh2} alt='Linh' />
-        <img className='grid-item-main grid-item-21-main' src={linh3} alt='Linh' />
-        <img className='grid-item-main grid-item-22-main' src={linh4} alt='Linh' />
-        <img className='grid-item-main grid-item-23-main' src={linh5} alt='Linh' />
-        <img className='grid-item-main grid-item-24-main' src={linh6} alt='Linh' />
-        <img className='grid-item-main grid-item-25-main' src={linh7} alt='Linh' />
-        <img className='grid-item-main grid-item-26-main' src={linh8} alt='Linh' />
-        <img className='grid-item-main grid-item-27-main' src={linh9} alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={10} src={justin1} effect='blur' alt='Justin' />
+          <LazyLoadImage className='grid-item-main' key={11} src={justin2} effect='blur' alt='Justin' />
+          <LazyLoadImage className='grid-item-main' key={12} src={justin3} effect='blur' alt='Justin' />
+          <LazyLoadImage className='grid-item-main' key={13} src={justin4} effect='blur' alt='Justin' />
+          <LazyLoadImage className='grid-item-main' key={14} src={justin5} effect='blur' alt='Justin' />
+          <LazyLoadImage className='grid-item-main' key={15} src={justin6} effect='blur' alt='Justin' />
+          <LazyLoadImage className='grid-item-main' key={16} src={justin7} effect='blur' alt='Justin' />
+          <LazyLoadImage className='grid-item-main' key={17} src={justin8} effect='blur' alt='Justin' />
+          <LazyLoadImage className='grid-item-main' key={18} src={justin9} effect='blur' alt='Justin' />
+        </div>
+
+        <div className='grid-container-main'>
+          <LazyLoadImage className='grid-item-main' key={19} src={bliss1} effect='blur' alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={20} src={bliss2} effect='blur' alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={21} src={bliss3} effect='blur' alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={22} src={bliss4} effect='blur' alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={23} src={bliss5} effect='blur' alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={24} src={bliss6} effect='blur' alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={25} src={bliss7} effect='blur' alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={26} src={bliss8} effect='blur' alt='Bliss' />
+          <LazyLoadImage className='grid-item-main' key={27} src={bliss9} effect='blur' alt='Bliss' />
+        </div>
+
+        <div className='grid-container-main'>
+          <LazyLoadImage className='grid-item-main' key={28} src={linh1} effect='blur' alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={29} src={linh2} effect='blur' alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={30} src={linh3} effect='blur' alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={31} src={linh4} effect='blur' alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={32} src={linh5} effect='blur' alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={33} src={linh6} effect='blur' alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={34} src={linh7} effect='blur' alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={35} src={linh8} effect='blur' alt='Linh' />
+          <LazyLoadImage className='grid-item-main' key={36} src={linh9} effect='blur' alt='Linh' />
+        </div>
       </div>
+
     </>
   )
 }
