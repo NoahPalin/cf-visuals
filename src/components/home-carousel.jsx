@@ -2,9 +2,9 @@ import { React, useState } from 'react'
 import { Carousel } from 'react-bootstrap'
 import '../styles/home-carousel.css'
 
-import img2 from "./images/home-images/DSC_0106.jpg";
-import img3 from "./images/home-images/DSC_0331.jpg";
-import img4 from "./images/home-images/scrub-daddy.png";
+import img2 from "./images/photoshoots/linh-photoshoot/DSC_0106.jpg";
+import img3 from "./images/photoshoots/bliss-photoshoot/DSC_0331.jpg";
+import img4 from "./images/photoshoots/scrub-daddy-photoshoot/scrub-daddy.png";
 
 function HomeCarousel() {
   const [index, setIndex] = useState(0);
