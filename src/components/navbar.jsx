@@ -26,7 +26,7 @@ function NavMain() {
   return (
     <>
       <div className='nav'>
-        <img className='logo' src={logo} alt='CF-Visuals logo.' />
+        <img className='logo' src={cameraLogo} alt='CF-Visuals logo.' />
         <div className='title'>CF Visuals</div>
         <div className='nav-links'>
           {dimensions.width < 400 ? <NavDropdown /> :
