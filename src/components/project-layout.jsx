@@ -1,9 +1,9 @@
 import '../styles/project-layout.css'
-import liam1 from './images/home-images/DSC_0044.jpg';
-import liam2 from './images/home-images/DSC_0052.jpg';
-import liam3 from './images/home-images/DSC_0080.jpg';
-import liam4 from './images/home-images/DSC_0170.jpg';
-import liam5 from './images/home-images/DSC_0200.jpg';
+import liam1 from './images/photoshoots/liam-photoshoot/DSC_0044.jpg';
+import liam2 from './images/photoshoots/liam-photoshoot/DSC_0052.jpg';
+import liam3 from './images/photoshoots/liam-photoshoot/DSC_0080.jpg';
+import liam4 from './images/photoshoots/liam-photoshoot/DSC_0170.jpg';
+import liam5 from './images/photoshoots/liam-photoshoot/DSC_0200.jpg';
 
 
 
