@@ -1,8 +1,8 @@
 function Professional() {
   return (
     <>
-      <div style={{ color: 'white' }}>
-        Professional
+      <div>
+        Professional Work
       </div>
     </>
   )
