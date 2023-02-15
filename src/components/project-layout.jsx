@@ -1,4 +1,6 @@
-import '../styles/project-layout.css'
+import { useParams } from 'react-router-dom';
+
+import '../styles/project-layout.css';
 import liam1 from './images/photoshoots/liam-photoshoot/DSC_0044.jpg';
 import liam2 from './images/photoshoots/liam-photoshoot/DSC_0052.jpg';
 import liam3 from './images/photoshoots/liam-photoshoot/DSC_0080.jpg';
@@ -40,6 +42,8 @@ import justin8 from './images/photoshoots/justin-josh-photoshoot/DSC_1003.jpg';
 import justin9 from './images/photoshoots/justin-josh-photoshoot/josh2.jpg';
 
 function ProjectLayout() {
+  let {projectID} = useParams();
+
   const liamImages = [liam1, liam2, liam3, liam4, liam5, liam6, liam7, liam8, liam9];
   const blissImages = [bliss1, bliss2, bliss3, bliss4, bliss5, bliss6, bliss7, bliss8, bliss9];
   const linhImages = [linh1, linh2, linh3, linh4, linh5, linh6, linh7, linh8, linh9];
