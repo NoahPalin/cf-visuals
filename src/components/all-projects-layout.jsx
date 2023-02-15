@@ -1,6 +1,7 @@
 import '../styles/all-projects-layout.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { decode } from "blurhash";
 
 import liam1 from './images/photoshoots/liam-photoshoot/DSC_0044.jpg';
 import liam2 from './images/photoshoots/liam-photoshoot/DSC_0052.jpg';
@@ -52,6 +53,18 @@ function AllProjectsLayout() {
   // const blissImages = [bliss1, bliss2, bliss3, bliss4, bliss5, bliss6, bliss7, bliss8, bliss9];
   // const linhImages = [linh1, linh2, linh3, linh4, linh5, linh6, linh7, linh8, linh9];
   // const justinImages = [justin1, justin2, justin3, justin4, justin5, justin6, justin7, justin8, justin9];
+  const readHash = () => {
+    const pixels = decode("LKLgw#$|^*I9_NS5kDt8%2Rk9GWB", 32, 32);
+
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    const imageData = ctx.createImageData(4, 4);
+    imageData.data.set(pixels);
+    ctx.putImageData(imageData, 0, 0);
+    document.body.append(canvas);
+  }
+  readHash();
+
 
   return (
     <>
@@ -66,7 +79,7 @@ function AllProjectsLayout() {
       <div className='entire-grid-container'>
         <div className='grid-container-main'>
 
-          <LazyLoadImage className='grid-item-main' key={1} src={liam1} effect='blur' alt='Liam' />
+          <LazyLoadImage className='grid-item-main' key={1} src={liam1} placeholderSrc='blur' effect='blur' alt='Liam' />
           <LazyLoadImage className='grid-item-main' key={2} src={liam2} effect='blur' alt='Liam' />
           <LazyLoadImage className='grid-item-main' key={3} src={liam3} effect='blur' alt='Liam' />
           <LazyLoadImage className='grid-item-main' key={4} src={liam4} effect='blur' alt='Liam' />
