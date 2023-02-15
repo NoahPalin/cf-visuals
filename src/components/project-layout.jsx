@@ -5,8 +5,6 @@ import liam3 from './images/photoshoots/liam-photoshoot/DSC_0080.jpg';
 import liam4 from './images/photoshoots/liam-photoshoot/DSC_0170.jpg';
 import liam5 from './images/photoshoots/liam-photoshoot/DSC_0200.jpg';
 
-
-
 function ProjectLayout() {
 
   return (

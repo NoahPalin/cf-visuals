@@ -6,6 +6,7 @@ import Professional from './components/professional'
 import Personal from './components/personal'
 import MainFooter from './components/main-footer'
 import './styles/app.css'
+import ProjectLayout from './components/project-layout'
 
 
 function App() {
@@ -17,6 +18,12 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/professional' element={<Professional />} />
         <Route path='/personal' element={<Personal />} />
+        {/* <Route path='*' element={<Error />} /> */}
+
+
+        <Route path='/professional/:projectID' element={<ProjectLayout />} />
+        <Route path='/personal/:projectID' element={<ProjectLayout />} />
+
       </Routes>
       <MainFooter />
     </div>

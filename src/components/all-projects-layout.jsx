@@ -2,6 +2,8 @@ import '../styles/all-projects-layout.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { decode } from "blurhash";
+import { Link } from "react-router-dom";
+
 
 import liam1 from './images/photoshoots/liam-photoshoot/DSC_0044.jpg';
 import liam2 from './images/photoshoots/liam-photoshoot/DSC_0052.jpg';
@@ -49,22 +51,20 @@ import justin9 from './images/photoshoots/justin-josh-photoshoot/josh2.jpg';
 
 function AllProjectsLayout() {
 
-  // const liamImages = [liam1, liam2, liam3, liam4, liam5, liam6, liam7, liam8, liam9];
-  // const blissImages = [bliss1, bliss2, bliss3, bliss4, bliss5, bliss6, bliss7, bliss8, bliss9];
-  // const linhImages = [linh1, linh2, linh3, linh4, linh5, linh6, linh7, linh8, linh9];
-  // const justinImages = [justin1, justin2, justin3, justin4, justin5, justin6, justin7, justin8, justin9];
-  const readHash = () => {
-    const pixels = decode("LKLgw#$|^*I9_NS5kDt8%2Rk9GWB", 32, 32);
+  const liamImages = [liam1, liam2, liam3, liam4, liam5, liam6, liam7, liam8, liam9];
+  const blissImages = [bliss1, bliss2, bliss3, bliss4, bliss5, bliss6, bliss7, bliss8, bliss9];
+  const linhImages = [linh1, linh2, linh3, linh4, linh5, linh6, linh7, linh8, linh9];
+  const justinImages = [justin1, justin2, justin3, justin4, justin5, justin6, justin7, justin8, justin9];
 
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    const imageData = ctx.createImageData(4, 4);
-    imageData.data.set(pixels);
-    ctx.putImageData(imageData, 0, 0);
-    document.body.append(canvas);
+  const getImages = function (name, id, altText) {
+
+    const allImages = name.map((image) =>
+      <Link to={`/personal/${id}`}>
+        <LazyLoadImage className='grid-item-main' key={name.indexOf(image)} src={image} placeholderSrc='blur' effect='blur' alt={altText} />
+      </Link>
+    );
+    return allImages;
   }
-  readHash();
-
 
   return (
     <>
@@ -78,50 +78,16 @@ function AllProjectsLayout() {
       </div>
       <div className='entire-grid-container'>
         <div className='grid-container-main'>
-
-          <LazyLoadImage className='grid-item-main' key={1} src={liam1} placeholderSrc='blur' effect='blur' alt='Liam' />
-          <LazyLoadImage className='grid-item-main' key={2} src={liam2} effect='blur' alt='Liam' />
-          <LazyLoadImage className='grid-item-main' key={3} src={liam3} effect='blur' alt='Liam' />
-          <LazyLoadImage className='grid-item-main' key={4} src={liam4} effect='blur' alt='Liam' />
-          <LazyLoadImage className='grid-item-main' key={5} src={liam5} effect='blur' alt='Liam' />
-          <LazyLoadImage className='grid-item-main' key={6} src={liam6} effect='blur' alt='Liam' />
-          <LazyLoadImage className='grid-item-main' key={7} src={liam7} effect='blur' alt='Liam' />
-          <LazyLoadImage className='grid-item-main' key={8} src={liam8} effect='blur' alt='Liam' />
-          <LazyLoadImage className='grid-item-main' key={9} src={liam9} effect='blur' alt='Liam' />
-
-          <LazyLoadImage className='grid-item-main' key={10} src={justin1} effect='blur' alt='Justin' />
-          <LazyLoadImage className='grid-item-main' key={11} src={justin2} effect='blur' alt='Justin' />
-          <LazyLoadImage className='grid-item-main' key={12} src={justin3} effect='blur' alt='Justin' />
-          <LazyLoadImage className='grid-item-main' key={13} src={justin4} effect='blur' alt='Justin' />
-          <LazyLoadImage className='grid-item-main' key={14} src={justin5} effect='blur' alt='Justin' />
-          <LazyLoadImage className='grid-item-main' key={15} src={justin6} effect='blur' alt='Justin' />
-          <LazyLoadImage className='grid-item-main' key={16} src={justin7} effect='blur' alt='Justin' />
-          <LazyLoadImage className='grid-item-main' key={17} src={justin8} effect='blur' alt='Justin' />
-          <LazyLoadImage className='grid-item-main' key={18} src={justin9} effect='blur' alt='Justin' />
+          {getImages(liamImages, 1, "Liam")}
+          {getImages(justinImages, 2, "Justin")}
         </div>
 
         <div className='grid-container-main'>
-          <LazyLoadImage className='grid-item-main' key={19} src={bliss1} effect='blur' alt='Bliss' />
-          <LazyLoadImage className='grid-item-main' key={20} src={bliss2} effect='blur' alt='Bliss' />
-          <LazyLoadImage className='grid-item-main' key={21} src={bliss3} effect='blur' alt='Bliss' />
-          <LazyLoadImage className='grid-item-main' key={22} src={bliss4} effect='blur' alt='Bliss' />
-          <LazyLoadImage className='grid-item-main' key={23} src={bliss5} effect='blur' alt='Bliss' />
-          <LazyLoadImage className='grid-item-main' key={24} src={bliss6} effect='blur' alt='Bliss' />
-          <LazyLoadImage className='grid-item-main' key={25} src={bliss7} effect='blur' alt='Bliss' />
-          <LazyLoadImage className='grid-item-main' key={26} src={bliss8} effect='blur' alt='Bliss' />
-          <LazyLoadImage className='grid-item-main' key={27} src={bliss9} effect='blur' alt='Bliss' />
+          {getImages(blissImages, 3, "Bliss")}
         </div>
 
         <div className='grid-container-main'>
-          <LazyLoadImage className='grid-item-main' key={28} src={linh1} effect='blur' alt='Linh' />
-          <LazyLoadImage className='grid-item-main' key={29} src={linh2} effect='blur' alt='Linh' />
-          <LazyLoadImage className='grid-item-main' key={30} src={linh3} effect='blur' alt='Linh' />
-          <LazyLoadImage className='grid-item-main' key={31} src={linh4} effect='blur' alt='Linh' />
-          <LazyLoadImage className='grid-item-main' key={32} src={linh5} effect='blur' alt='Linh' />
-          <LazyLoadImage className='grid-item-main' key={33} src={linh6} effect='blur' alt='Linh' />
-          <LazyLoadImage className='grid-item-main' key={34} src={linh7} effect='blur' alt='Linh' />
-          <LazyLoadImage className='grid-item-main' key={35} src={linh8} effect='blur' alt='Linh' />
-          <LazyLoadImage className='grid-item-main' key={36} src={linh9} effect='blur' alt='Linh' />
+          {getImages(linhImages, 4, "Linh")}
         </div>
       </div>
 
