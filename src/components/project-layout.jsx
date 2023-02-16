@@ -53,6 +53,7 @@ function ProjectLayout() {
     <>
       <div className='grid-container'>
         <div className='grid-item grid-item-1'>
+          LIAM IMAGES
           <img src={liam1} alt='Liam' />
         </div>
         <div className='grid-item grid-item-2'>
