@@ -1,5 +1,5 @@
-import ProjectLayout from './project-layout'
-import '../styles/personal.css'
+import ProjectLayout from './project-layout';
+import '../styles/personal.css';
 
 function Personal() {
   return (
@@ -17,4 +17,4 @@ function Personal() {
   )
 }
 
-export default Personal
+export default Personal;
