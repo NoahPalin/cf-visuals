@@ -10,8 +10,8 @@
     "smallImage1 smallImage2"
     "largeImage1 largeImage1"
     "smallImage3 smallImage4";
-    border-style: solid;
-    border-color: red;
+    border-style: dotted;
+    border-color: rgb(9, 135, 184);
 }
 
 img {
