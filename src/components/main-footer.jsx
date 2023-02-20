@@ -1,5 +1,4 @@
 import '../styles/main-footer.css'
-import instagram from './images/instagram.svg';
 
 function MainFooter() {
 
