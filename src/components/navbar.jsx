@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/nav.css'
 import cameraLogo from './images/camera-2.png'
-import logo from './images/cf-logo.png'
 import NavDropdown from './nav-dropdown';
 
 function NavMain() {
