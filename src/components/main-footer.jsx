@@ -5,7 +5,7 @@ function MainFooter() {
   return (
     <div className='footer'>
       <div className='writingSection'>
-        CF VISUALS | ALL RIGHTS RESERVED | 2021-2023 ajfhskjdhvkj
+        CF VISUALS | ALL RIGHTS RESERVED | 2021-2023
       </div>
 
       <div className='iconSection'>
