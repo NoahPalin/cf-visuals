@@ -29,6 +29,11 @@
   transition: 0.3s;
 }
 
+.note {
+  font-size: 1.5vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .link:hover {
   color: white;
 }
