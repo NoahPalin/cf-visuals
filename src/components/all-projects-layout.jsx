@@ -55,7 +55,7 @@ function AllProjectsLayout() {
   const linhImages = [linh1, linh2, linh3, linh4, linh5, linh6, linh7, linh8, linh9];
   const justinImages = [justin1, justin2, justin3, justin4, justin5, justin6, justin7, justin8, justin9];
 
-  const getImages = function (name, id, altText, multiple) {
+  const getImages = function (name, id, altText) {
 
     const allImages = name.map((image) =>
       <Link to={`/personal/${id}`}>

@@ -8,7 +8,6 @@ function Home() {
   return (
     <>
       <HomeCarousel/>
-      HOME
       <AllProjectsLayout/>
     </>
   )

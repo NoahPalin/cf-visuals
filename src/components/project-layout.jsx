@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import '../styles/project-layout.css';
 import liam1 from './images/photoshoots/liam-photoshoot/DSC_0044.jpg';
@@ -42,18 +43,44 @@ import justin8 from './images/photoshoots/justin-josh-photoshoot/DSC_1003.jpg';
 import justin9 from './images/photoshoots/justin-josh-photoshoot/josh2.jpg';
 
 function ProjectLayout() {
-  let {projectID} = useParams();
+  let { projectID } = useParams();
 
   const liamImages = [liam1, liam2, liam3, liam4, liam5, liam6, liam7, liam8, liam9];
   const blissImages = [bliss1, bliss2, bliss3, bliss4, bliss5, bliss6, bliss7, bliss8, bliss9];
   const linhImages = [linh1, linh2, linh3, linh4, linh5, linh6, linh7, linh8, linh9];
   const justinImages = [justin1, justin2, justin3, justin4, justin5, justin6, justin7, justin8, justin9];
 
+  const getImages = function (name, id, altText) {
+    const allImages = name.map((image) =>
+      <div className={`grid-item grid-item-${name.indexOf(image) + 1}`}>
+        <LazyLoadImage className='grid-item-main' key={name.indexOf(image)} src={image} placeholderSrc='blur' effect='blur' alt={altText} />
+      </div>
+    );
+    return allImages;
+  }
+
+  const getInfoFromProjectID = function (id) {
+    switch (projectID) {
+      case 1:
+        return getImages(liamImages, projectID, 'Liam');
+        break;
+      case 2:
+        return getImages(blissImages, projectID, 'Bliss');
+        break;
+      case 3:
+        return getImages(linhImages, projectID, 'Linh');
+        break;
+      case 4:
+        return getImages(justinImages, projectID, 'Justin');
+        break;
+    }
+  }
+
   return (
     <>
       <div className='grid-container'>
-        <div className='grid-item grid-item-1'>
-          LIAM IMAGES
+        {getInfoFromProjectID(projectID)}
+        {/* <div className='grid-item grid-item-1'>
           <img src={liam1} alt='Liam' />
         </div>
         <div className='grid-item grid-item-2'>
@@ -67,7 +94,7 @@ function ProjectLayout() {
         </div>
         <div className='grid-item grid-item-5'>
           <img src={liam5} alt='Liam' />
-        </div>
+        </div> */}
       </div>
     </>
   )

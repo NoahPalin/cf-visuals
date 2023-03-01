@@ -15,7 +15,6 @@ function HomeCarousel() {
 
   return (
     <Carousel fade>
-      Carousel Item
       <Carousel.Item>
         <img
           className="d-block slide-image"
