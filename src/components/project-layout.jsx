@@ -42,6 +42,7 @@ import justin6 from './images/photoshoots/justin-josh-photoshoot/DSC_0125.jpg';
 import justin7 from './images/photoshoots/justin-josh-photoshoot/DSC_0995.jpg';
 import justin8 from './images/photoshoots/justin-josh-photoshoot/DSC_1003.jpg';
 import justin9 from './images/photoshoots/justin-josh-photoshoot/josh2.jpg';
+import { faBreadSlice } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectLayout() {
   const { projectID } = useParams();
@@ -57,28 +58,65 @@ function ProjectLayout() {
   const justinImages = [justin1, justin2, justin3, justin4, justin5, justin6, justin7, justin8, justin9];
 
   const getImages = function (name, id, altText) {
-    const allImages = name.map((image) =>
-      <div className={`grid-item grid-item-${name.indexOf(image) + 1}`}>
-        <LazyLoadImage className='grid-item-main' key={name.indexOf(image)} src={image} placeholderSrc='blur' effect='blur' alt={altText} />
-      </div>
-    );
-    return allImages;
+    // const allImages = name.map((image) =>
+    //   <div className={`grid-item grid-item-${name.indexOf(image) + 1}`}>
+    //     <LazyLoadImage className='grid-item-main' key={name.indexOf(image)} src={image} placeholderSrc='blur' effect='blur' alt={altText} />
+    //   </div>
+    // );
+    // return allImages;
+    switch (altText) {
+      case 'Liam':
+        return (
+          <>
+            <div className='grid-item liam-grid-item-1'>
+              <LazyLoadImage className='grid-item-main' key={1} src={liam1} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+            <div className='grid-item liam-grid-item-2'>
+              <LazyLoadImage className='grid-item-main' key={2} src={liam2} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+            <div className='grid-item liam-grid-item-3'>
+              <LazyLoadImage className='grid-item-main' key={3} src={liam3} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+            <div className='grid-item liam-grid-item-4'>
+              <LazyLoadImage className='grid-item-main' key={4} src={liam4} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+            <div className='grid-item liam-grid-item-5'>
+              <LazyLoadImage className='grid-item-main' key={5} src={liam5} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+            <div className='grid-item liam-grid-item-6'>
+              <LazyLoadImage className='grid-item-main' key={6} src={liam6} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+            <div className='grid-item liam-grid-item-7'>
+              <LazyLoadImage className='grid-item-main' key={7} src={liam7} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+            <div className='grid-item liam-grid-item-8'>
+              <LazyLoadImage className='grid-item-main' key={8} src={liam8} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+            <div className='grid-item liam-grid-item-9'>
+              <LazyLoadImage className='grid-item-main' key={9} src={liam9} placeholderSrc='blur' effect='blur' alt='Liam' />
+            </div>
+          </>
+        )
+      case 'Justin':
+        return;
+      case 'Bliss':
+        return;
+      case 'Linh':
+        return;
+    }
+
   }
 
   const getInfoFromProjectID = function (id) {
     switch (id) {
       case 1:
         return getImages(liamImages, projectID, 'Liam');
-        break;
       case 2:
         return getImages(justinImages, projectID, 'Justin');
-        break;
       case 3:
         return getImages(blissImages, projectID, 'Bliss');
-        break;
       case 4:
         return getImages(linhImages, projectID, 'Linh');
-        break;
     }
 
   }
