@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import React, { useState, useEffect } from 'react';
 
 import '../styles/project-layout.css';
 import liam1 from './images/photoshoots/liam-photoshoot/DSC_0044.jpg';
@@ -43,7 +44,12 @@ import justin8 from './images/photoshoots/justin-josh-photoshoot/DSC_1003.jpg';
 import justin9 from './images/photoshoots/justin-josh-photoshoot/josh2.jpg';
 
 function ProjectLayout() {
-  let { projectID } = useParams();
+  const { projectID } = useParams();
+  const [projectIDState, setProjectID] = useState(projectID);
+
+  useEffect(() => {
+    setProjectID(projectIDState);
+  }, []);
 
   const liamImages = [liam1, liam2, liam3, liam4, liam5, liam6, liam7, liam8, liam9];
   const blissImages = [bliss1, bliss2, bliss3, bliss4, bliss5, bliss6, bliss7, bliss8, bliss9];
@@ -60,41 +66,27 @@ function ProjectLayout() {
   }
 
   const getInfoFromProjectID = function (id) {
-    switch (projectID) {
+    switch (id) {
       case 1:
         return getImages(liamImages, projectID, 'Liam');
         break;
       case 2:
-        return getImages(blissImages, projectID, 'Bliss');
-        break;
-      case 3:
-        return getImages(linhImages, projectID, 'Linh');
-        break;
-      case 4:
         return getImages(justinImages, projectID, 'Justin');
         break;
+      case 3:
+        return getImages(blissImages, projectID, 'Bliss');
+        break;
+      case 4:
+        return getImages(linhImages, projectID, 'Linh');
+        break;
     }
+
   }
 
   return (
     <>
       <div className='grid-container'>
-        {getInfoFromProjectID(projectID)}
-        {/* <div className='grid-item grid-item-1'>
-          <img src={liam1} alt='Liam' />
-        </div>
-        <div className='grid-item grid-item-2'>
-          <img src={liam2} alt='Liam' />
-        </div>
-        <div className='grid-item grid-item-3'>
-          <img src={liam3} alt='Liam' />
-        </div>
-        <div className='grid-item grid-item-4'>
-          <img src={liam4} alt='Liam' />
-        </div>
-        <div className='grid-item grid-item-5'>
-          <img src={liam5} alt='Liam' />
-        </div> */}
+        {getInfoFromProjectID(parseInt(projectIDState))}
       </div>
     </>
   )
