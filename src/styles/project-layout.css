@@ -1,4 +1,4 @@
-.grid-container {
+.liam-grid-container {
   height: 100%;
   margin: 5vw;
   
@@ -13,8 +13,22 @@
     "largeImage2 largeImage2"
     "smallImage5 smallImage6"
     "largeImage3 largeImage3";
-    border-style: solid;
-    border-color: rgb(52, 28, 34);
+}
+
+.justin-grid-container {
+  height: 100%;
+  margin: 5vw;
+  
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "img1 img2"
+    "img3 img4"
+    "img5 img6"
+    "img7 img8"
+    "img9 img10";
 }
 
 img {
