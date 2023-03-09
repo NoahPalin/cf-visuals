@@ -1,4 +1,4 @@
-function Professional() {
+function Portfolio() {
   return (
     <>
       <div>
@@ -8,4 +8,4 @@ function Professional() {
   )
 }
 
-export default Professional
+export default Portfolio

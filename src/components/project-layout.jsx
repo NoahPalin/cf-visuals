@@ -67,99 +67,123 @@ function ProjectLayout() {
     switch (altText) {
       case 'Liam':
         return (
-          <div className='liam-grid-container'>
-            <div className='grid-item liam-grid-item-1'>
-              <LazyLoadImage key={1} src={liam1} placeholderSrc='blur' effect='blur' alt='Liam' />
+          <>
+            <div className='project-text-area'>
+              <div className='project-title'>Liam Photoshoot</div>
+              <div className='project-text-area-paragraph'>
+                Photographer - Stylist - Set Design
+              </div>
             </div>
-            <div className='grid-item liam-grid-item-2'>
-              <LazyLoadImage key={2} src={liam2} placeholderSrc='blur' effect='blur' alt='Liam' />
+            <div className='liam-grid-container'>
+              <div className='grid-item liam-grid-item-1'>
+                <LazyLoadImage key={1} src={liam1} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
+              <div className='grid-item liam-grid-item-2'>
+                <LazyLoadImage key={2} src={liam2} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
+              <div className='grid-item liam-grid-item-3'>
+                <LazyLoadImage key={3} src={liam3} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
+              <div className='grid-item liam-grid-item-4'>
+                <LazyLoadImage key={4} src={liam4} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
+              <div className='grid-item liam-grid-item-5'>
+                <LazyLoadImage key={5} src={liam5} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
+              <div className='grid-item liam-grid-item-6'>
+                <LazyLoadImage key={6} src={liam6} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
+              <div className='grid-item liam-grid-item-7'>
+                <LazyLoadImage key={7} src={liam7} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
+              <div className='grid-item liam-grid-item-8'>
+                <LazyLoadImage key={8} src={liam8} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
+              <div className='grid-item liam-grid-item-9'>
+                <LazyLoadImage key={9} src={liam9} placeholderSrc='blur' effect='blur' alt='Liam' />
+              </div>
             </div>
-            <div className='grid-item liam-grid-item-3'>
-              <LazyLoadImage key={3} src={liam3} placeholderSrc='blur' effect='blur' alt='Liam' />
-            </div>
-            <div className='grid-item liam-grid-item-4'>
-              <LazyLoadImage key={4} src={liam4} placeholderSrc='blur' effect='blur' alt='Liam' />
-            </div>
-            <div className='grid-item liam-grid-item-5'>
-              <LazyLoadImage key={5} src={liam5} placeholderSrc='blur' effect='blur' alt='Liam' />
-            </div>
-            <div className='grid-item liam-grid-item-6'>
-              <LazyLoadImage key={6} src={liam6} placeholderSrc='blur' effect='blur' alt='Liam' />
-            </div>
-            <div className='grid-item liam-grid-item-7'>
-              <LazyLoadImage key={7} src={liam7} placeholderSrc='blur' effect='blur' alt='Liam' />
-            </div>
-            <div className='grid-item liam-grid-item-8'>
-              <LazyLoadImage key={8} src={liam8} placeholderSrc='blur' effect='blur' alt='Liam' />
-            </div>
-            <div className='grid-item liam-grid-item-9'>
-              <LazyLoadImage key={9} src={liam9} placeholderSrc='blur' effect='blur' alt='Liam' />
-            </div>
-          </div>
+          </>
         )
       case 'Justin':
         return (
-          <div className='justin-grid-container'>
-            <div className='grid-item justin-grid-item-1'>
-              <LazyLoadImage key={1} src={justin1} placeholderSrc='blur' effect='blur' alt='Justin' />
+          <>
+            <div className='project-text-area'>
+              <div className='project-title'>Justin Photoshoot</div>
+              <div className='project-text-area-paragraph'>
+                Photographer - Stylist - Set Design
+              </div>
             </div>
-            <div className='grid-item justin-grid-item-2'>
-              <LazyLoadImage key={2} src={justin2} placeholderSrc='blur' effect='blur' alt='Justin' />
+            <div className='justin-grid-container'>
+              <div className='grid-item justin-grid-item-1'>
+                <LazyLoadImage key={1} src={justin1} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
+              <div className='grid-item justin-grid-item-2'>
+                <LazyLoadImage key={2} src={justin2} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
+              <div className='grid-item justin-grid-item-3'>
+                <LazyLoadImage key={3} src={justin3} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
+              <div className='grid-item justin-grid-item-4'>
+                <LazyLoadImage key={4} src={justin4} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
+              <div className='grid-item justin-grid-item-5'>
+                <LazyLoadImage key={5} src={justin5} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
+              <div className='grid-item justin-grid-item-6'>
+                <LazyLoadImage key={6} src={justin6} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
+              <div className='grid-item justin-grid-item-7'>
+                <LazyLoadImage key={7} src={justin7} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
+              <div className='grid-item justin-grid-item-8'>
+                <LazyLoadImage key={8} src={justin8} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
+              <div className='grid-item justin-grid-item-9'>
+                <LazyLoadImage key={9} src={justin9} placeholderSrc='blur' effect='blur' alt='Justin' />
+              </div>
             </div>
-            <div className='grid-item justin-grid-item-3'>
-              <LazyLoadImage key={3} src={justin3} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-4'>
-              <LazyLoadImage key={4} src={justin4} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-5'>
-              <LazyLoadImage key={5} src={justin5} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-6'>
-              <LazyLoadImage key={6} src={justin6} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-7'>
-              <LazyLoadImage key={7} src={justin7} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-8'>
-              <LazyLoadImage key={8} src={justin8} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-9'>
-              <LazyLoadImage key={9} src={justin9} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-          </div>
+          </>
         )
       case 'Bliss':
         return (
-          <div className='bliss-grid-container'>
-            <div className='grid-item bliss-grid-item-1'>
-              <LazyLoadImage key={1} src={bliss1} placeholderSrc='blur' effect='blur' alt='Bliss' />
+          <>
+            <div className='project-text-area'>
+              <div className='project-title'>Bliss Photoshoot</div>
+              <div className='project-text-area-paragraph'>
+                Photographer - Stylist - Set Design
+              </div>
             </div>
-            <div className='grid-item bliss-grid-item-2'>
-              <LazyLoadImage key={2} src={bliss2} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            <div className='bliss-grid-container'>
+              <div className='grid-item bliss-grid-item-1'>
+                <LazyLoadImage key={1} src={bliss1} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
+              <div className='grid-item bliss-grid-item-2'>
+                <LazyLoadImage key={2} src={bliss2} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
+              <div className='grid-item bliss-grid-item-3'>
+                <LazyLoadImage key={3} src={bliss3} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
+              <div className='grid-item bliss-grid-item-4'>
+                <LazyLoadImage key={4} src={bliss4} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
+              <div className='grid-item bliss-grid-item-5'>
+                <LazyLoadImage key={5} src={bliss5} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
+              <div className='grid-item bliss-grid-item-6'>
+                <LazyLoadImage key={6} src={bliss6} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
+              <div className='grid-item bliss-grid-item-7'>
+                <LazyLoadImage key={7} src={bliss7} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
+              <div className='grid-item bliss-grid-item-8'>
+                <LazyLoadImage key={8} src={bliss8} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
+              <div className='grid-item bliss-grid-item-9'>
+                <LazyLoadImage key={9} src={bliss9} placeholderSrc='blur' effect='blur' alt='Bliss' />
+              </div>
             </div>
-            <div className='grid-item bliss-grid-item-3'>
-              <LazyLoadImage key={3} src={bliss3} placeholderSrc='blur' effect='blur' alt='Bliss' />
-            </div>
-            <div className='grid-item bliss-grid-item-4'>
-              <LazyLoadImage key={4} src={bliss4} placeholderSrc='blur' effect='blur' alt='Bliss' />
-            </div>
-            <div className='grid-item bliss-grid-item-5'>
-              <LazyLoadImage key={5} src={bliss5} placeholderSrc='blur' effect='blur' alt='Bliss' />
-            </div>
-            <div className='grid-item bliss-grid-item-6'>
-              <LazyLoadImage key={6} src={bliss6} placeholderSrc='blur' effect='blur' alt='Bliss' />
-            </div>
-            <div className='grid-item bliss-grid-item-7'>
-              <LazyLoadImage key={7} src={bliss7} placeholderSrc='blur' effect='blur' alt='Bliss' />
-            </div>
-            <div className='grid-item bliss-grid-item-8'>
-              <LazyLoadImage key={8} src={bliss8} placeholderSrc='blur' effect='blur' alt='Bliss' />
-            </div>
-            <div className='grid-item bliss-grid-item-9'>
-              <LazyLoadImage key={9} src={bliss9} placeholderSrc='blur' effect='blur' alt='Bliss' />
-            </div>
-          </div>
+          </>
         )
       case 'Linh':
         return (

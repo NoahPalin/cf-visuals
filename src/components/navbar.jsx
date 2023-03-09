@@ -32,8 +32,7 @@ function NavMain() {
             <>
               <Link className='link' to='/'>Home</Link>
               <Link className='link' to='/about'>About</Link>
-              <Link className='link' to='/professional'>Professional</Link>
-              <Link className='link' to='/personal'>Personal</Link>
+              <Link className='link' to='/portfolio'>Portfolio</Link>
             </>
           }
         </div>
