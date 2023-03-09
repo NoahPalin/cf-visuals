@@ -98,7 +98,22 @@ function ProjectLayout() {
           </>
         )
       case 'Justin':
-        return;
+        return (
+          <>
+            <div className='grid-item justin-grid-item-1'>
+              <LazyLoadImage className='grid-item-main' key={1} src={justin1} placeholderSrc='blur' effect='blur' alt='Justin' />
+            </div>
+            <div className='grid-item justin-grid-item-2'>
+              <LazyLoadImage className='grid-item-main' key={2} src={justin2} placeholderSrc='blur' effect='blur' alt='Justin' />
+            </div>
+            <div className='grid-item justin-grid-item-3'>
+              <LazyLoadImage className='grid-item-main' key={3} src={justin3} placeholderSrc='blur' effect='blur' alt='Justin' />
+            </div>
+            <div className='grid-item justin-grid-item-4'>
+              <LazyLoadImage className='grid-item-main' key={4} src={justin4} placeholderSrc='blur' effect='blur' alt='Justin' />
+            </div>
+          </>
+        )
       case 'Bliss':
         return;
       case 'Linh':
