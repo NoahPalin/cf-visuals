@@ -163,8 +163,8 @@ function ProjectLayout() {
         )
       case 'Linh':
         return (
-          <>
-            <div className='linh-grid-container'>
+          <div className='linh-flex-container'>
+            <div className='linh-grid-container linh-grid-container-1'>
               <div className='grid-item linh-grid-item-1'>
                 <LazyLoadImage key={1} src={linh1} placeholderSrc='blur' effect='blur' alt='Bliss' />
               </div>
@@ -176,7 +176,7 @@ function ProjectLayout() {
               </div>
             </div>
 
-            <div className='linh-grid-container'>
+            <div className='linh-grid-container linh-grid-container-2'>
               <div className='grid-item linh-grid-item-4'>
                 <LazyLoadImage key={4} src={linh4} placeholderSrc='blur' effect='blur' alt='Linh' />
               </div>
@@ -188,7 +188,7 @@ function ProjectLayout() {
               </div>
             </div>
 
-            <div className='linh-grid-container'>
+            <div className='linh-grid-container linh-grid-container-3'>
               <div className='grid-item linh-grid-item-7'>
                 <LazyLoadImage key={7} src={linh7} placeholderSrc='blur' effect='blur' alt='Linh' />
               </div>
@@ -199,7 +199,7 @@ function ProjectLayout() {
                 <LazyLoadImage key={9} src={linh9} placeholderSrc='blur' effect='blur' alt='Linh' />
               </div>
             </div>
-          </>
+          </div>
         )
 }
 
