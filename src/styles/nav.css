@@ -59,12 +59,8 @@
 }
 
 .main-title {
-  margin-left: none;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-
-  font-size: 3vw;
-  color: #fff;
+  margin-right: 5px;
+  background-color: red;
+  text-decoration: none;
 
 }
