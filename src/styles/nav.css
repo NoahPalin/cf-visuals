@@ -57,3 +57,14 @@
   color: #fff;
 
 }
+
+.main-title {
+  margin-left: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+
+  font-size: 3vw;
+  color: #fff;
+
+}
