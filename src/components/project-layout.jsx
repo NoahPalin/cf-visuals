@@ -127,11 +127,40 @@ function ProjectLayout() {
             <div className='grid-item justin-grid-item-9'>
               <LazyLoadImage key={9} src={justin9} placeholderSrc='blur' effect='blur' alt='Justin' />
             </div>
-
           </div>
         )
       case 'Bliss':
-        return;
+        return (
+          <div className='bliss-grid-container'>
+            <div className='grid-item bliss-grid-item-1'>
+              <LazyLoadImage key={1} src={bliss1} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+            <div className='grid-item bliss-grid-item-2'>
+              <LazyLoadImage key={2} src={bliss2} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+            <div className='grid-item bliss-grid-item-3'>
+              <LazyLoadImage key={3} src={bliss3} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+            <div className='grid-item bliss-grid-item-4'>
+              <LazyLoadImage key={4} src={bliss4} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+            <div className='grid-item bliss-grid-item-5'>
+              <LazyLoadImage key={5} src={bliss5} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+            <div className='grid-item bliss-grid-item-6'>
+              <LazyLoadImage key={6} src={bliss6} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+            <div className='grid-item bliss-grid-item-7'>
+              <LazyLoadImage key={7} src={bliss7} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+            <div className='grid-item bliss-grid-item-8'>
+              <LazyLoadImage key={8} src={bliss8} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+            <div className='grid-item bliss-grid-item-9'>
+              <LazyLoadImage key={9} src={bliss9} placeholderSrc='blur' effect='blur' alt='Bliss' />
+            </div>
+          </div>
+        )
       case 'Linh':
         return;
     }
