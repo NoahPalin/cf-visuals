@@ -167,7 +167,7 @@ function ProjectLayout() {
             <div className='project-text-area'>
               <div className='project-title'>Linh Photoshoot</div>
               <div className='project-text-area-paragraph'>
-                Linh
+                Photographer - Stylist - Set Design
               </div>
             </div>
 

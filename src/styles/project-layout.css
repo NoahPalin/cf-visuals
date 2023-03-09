@@ -110,20 +110,22 @@ img {
   align-items: center;
   justify-content: center;
 
-  margin-top: 2vh;
+  /* margin-left: 20vw;
+  margin-right: 20vw; */
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+
 
   color: rgb(201, 201, 201);
-
-  width: 80vw;
-
+  background-color: #303030;
 }
 
 .project-text-area-paragraph {
-  width: 80vw;
+  margin-left: 25vw;
 }
 
 .project-title {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 500;
   height: fit-content;
 }
