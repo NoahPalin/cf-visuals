@@ -67,7 +67,7 @@ function ProjectLayout() {
     switch (altText) {
       case 'Liam':
         return (
-          <>
+          <div className='grid-container'>
             <div className='grid-item liam-grid-item-1'>
               <LazyLoadImage className='grid-item-main' key={1} src={liam1} placeholderSrc='blur' effect='blur' alt='Liam' />
             </div>
@@ -95,54 +95,52 @@ function ProjectLayout() {
             <div className='grid-item liam-grid-item-9'>
               <LazyLoadImage className='grid-item-main' key={9} src={liam9} placeholderSrc='blur' effect='blur' alt='Liam' />
             </div>
-          </>
+          </div>
         )
       case 'Justin':
-        return (
-          <>
-            <div className='grid-item justin-grid-item-1'>
-              <LazyLoadImage className='grid-item-main' key={1} src={justin1} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-2'>
-              <LazyLoadImage className='grid-item-main' key={2} src={justin2} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-3'>
-              <LazyLoadImage className='grid-item-main' key={3} src={justin3} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-            <div className='grid-item justin-grid-item-4'>
-              <LazyLoadImage className='grid-item-main' key={4} src={justin4} placeholderSrc='blur' effect='blur' alt='Justin' />
-            </div>
-          </>
-        )
-      case 'Bliss':
-        return;
-      case 'Linh':
-        return;
-    }
-
-  }
-
-  const getInfoFromProjectID = function (id) {
-    switch (id) {
-      case 1:
-        return getImages(liamImages, projectID, 'Liam');
-      case 2:
-        return getImages(justinImages, projectID, 'Justin');
-      case 3:
-        return getImages(blissImages, projectID, 'Bliss');
-      case 4:
-        return getImages(linhImages, projectID, 'Linh');
-    }
-
-  }
-
   return (
     <>
-      <div className='grid-container'>
-        {getInfoFromProjectID(parseInt(projectIDState))}
+      <div className='grid-item justin-grid-item-1'>
+        <LazyLoadImage className='grid-item-main' key={1} src={justin1} placeholderSrc='blur' effect='blur' alt='Justin' />
+      </div>
+      <div className='grid-item justin-grid-item-2'>
+        <LazyLoadImage className='grid-item-main' key={2} src={justin2} placeholderSrc='blur' effect='blur' alt='Justin' />
+      </div>
+      <div className='grid-item justin-grid-item-3'>
+        <LazyLoadImage className='grid-item-main' key={3} src={justin3} placeholderSrc='blur' effect='blur' alt='Justin' />
+      </div>
+      <div className='grid-item justin-grid-item-4'>
+        <LazyLoadImage className='grid-item-main' key={4} src={justin4} placeholderSrc='blur' effect='blur' alt='Justin' />
       </div>
     </>
   )
+      case 'Bliss':
+  return;
+      case 'Linh':
+  return;
+}
+
+  }
+
+const getInfoFromProjectID = function (id) {
+  switch (id) {
+    case 1:
+      return getImages(liamImages, projectID, 'Liam');
+    case 2:
+      return getImages(justinImages, projectID, 'Justin');
+    case 3:
+      return getImages(blissImages, projectID, 'Bliss');
+    case 4:
+      return getImages(linhImages, projectID, 'Linh');
+  }
+
+}
+
+return (
+  <>
+    {getInfoFromProjectID(parseInt(projectIDState))}
+  </>
+)
 }
 
 export default ProjectLayout;
