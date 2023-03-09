@@ -163,67 +163,76 @@ function ProjectLayout() {
         )
       case 'Linh':
         return (
-          <div className='linh-flex-container'>
-            <div className='linh-grid-container linh-grid-container-1'>
-              <div className='grid-item linh-grid-item-1'>
-                <LazyLoadImage key={1} src={linh1} placeholderSrc='blur' effect='blur' alt='Bliss' />
-              </div>
-              <div className='grid-item linh-grid-item-2'>
-                <LazyLoadImage key={2} src={linh2} placeholderSrc='blur' effect='blur' alt='Linh' />
-              </div>
-              <div className='grid-item linh-grid-item-3'>
-                <LazyLoadImage key={3} src={linh3} placeholderSrc='blur' effect='blur' alt='Linh' />
+          <>
+            <div className='project-text-area'>
+              <div className='project-title'>Linh Photoshoot</div>
+              <div className='project-text-area-paragraph'>
+                Linh
               </div>
             </div>
 
-            <div className='linh-grid-container linh-grid-container-2'>
-              <div className='grid-item linh-grid-item-4'>
-                <LazyLoadImage key={4} src={linh4} placeholderSrc='blur' effect='blur' alt='Linh' />
+            <div className='linh-flex-container'>
+              <div className='linh-grid-container linh-grid-container-1'>
+                <div className='grid-item linh-grid-item-1'>
+                  <LazyLoadImage key={1} src={linh1} placeholderSrc='blur' effect='blur' alt='Bliss' />
+                </div>
+                <div className='grid-item linh-grid-item-2'>
+                  <LazyLoadImage key={2} src={linh2} placeholderSrc='blur' effect='blur' alt='Linh' />
+                </div>
+                <div className='grid-item linh-grid-item-3'>
+                  <LazyLoadImage key={3} src={linh3} placeholderSrc='blur' effect='blur' alt='Linh' />
+                </div>
               </div>
-              <div className='grid-item linh-grid-item-5'>
-                <LazyLoadImage key={5} src={linh5} placeholderSrc='blur' effect='blur' alt='Linh' />
-              </div>
-              <div className='grid-item linh-grid-item-6'>
-                <LazyLoadImage key={6} src={linh6} placeholderSrc='blur' effect='blur' alt='Linh' />
-              </div>
-            </div>
 
-            <div className='linh-grid-container linh-grid-container-3'>
-              <div className='grid-item linh-grid-item-7'>
-                <LazyLoadImage key={7} src={linh7} placeholderSrc='blur' effect='blur' alt='Linh' />
+              <div className='linh-grid-container linh-grid-container-2'>
+                <div className='grid-item linh-grid-item-4'>
+                  <LazyLoadImage key={4} src={linh4} placeholderSrc='blur' effect='blur' alt='Linh' />
+                </div>
+                <div className='grid-item linh-grid-item-5'>
+                  <LazyLoadImage key={5} src={linh5} placeholderSrc='blur' effect='blur' alt='Linh' />
+                </div>
+                <div className='grid-item linh-grid-item-6'>
+                  <LazyLoadImage key={6} src={linh6} placeholderSrc='blur' effect='blur' alt='Linh' />
+                </div>
               </div>
-              <div className='grid-item linh-grid-item-8'>
-                <LazyLoadImage key={8} src={linh8} placeholderSrc='blur' effect='blur' alt='Linh' />
-              </div>
-              <div className='grid-item linh-grid-item-9'>
-                <LazyLoadImage key={9} src={linh9} placeholderSrc='blur' effect='blur' alt='Linh' />
+
+              <div className='linh-grid-container linh-grid-container-3'>
+                <div className='grid-item linh-grid-item-7'>
+                  <LazyLoadImage key={7} src={linh7} placeholderSrc='blur' effect='blur' alt='Linh' />
+                </div>
+                <div className='grid-item linh-grid-item-8'>
+                  <LazyLoadImage key={8} src={linh8} placeholderSrc='blur' effect='blur' alt='Linh' />
+                </div>
+                <div className='grid-item linh-grid-item-9'>
+                  <LazyLoadImage key={9} src={linh9} placeholderSrc='blur' effect='blur' alt='Linh' />
+                </div>
               </div>
             </div>
-          </div>
+          </>
         )
-}
+    }
 
   }
 
-const getInfoFromProjectID = function (id) {
-  switch (id) {
-    case 1:
-      return getImages(liamImages, projectID, 'Liam');
-    case 2:
-      return getImages(justinImages, projectID, 'Justin');
-    case 3:
-      return getImages(blissImages, projectID, 'Bliss');
-    case 4:
-      return getImages(linhImages, projectID, 'Linh');
+  const getInfoFromProjectID = function (id) {
+    switch (id) {
+      case 1:
+        return getImages(liamImages, projectID, 'Liam');
+      case 2:
+        return getImages(justinImages, projectID, 'Justin');
+      case 3:
+        return getImages(blissImages, projectID, 'Bliss');
+      case 4:
+        return getImages(linhImages, projectID, 'Linh');
+    }
+
   }
 
-}
-
-return (
-  <>
-    {getInfoFromProjectID(parseInt(projectIDState))}
-  </>
-)
+  return (
+    <>
+      {getInfoFromProjectID(parseInt(projectIDState))}
+    </>
+  )
 }
 
 export default ProjectLayout;
