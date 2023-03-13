@@ -1,9 +1,9 @@
+import AllProjectsLayout from "./all-projects-layout"
+
 function Portfolio() {
   return (
     <>
-      <div>
-        Professional Work
-      </div>
+      <AllProjectsLayout/>
     </>
   )
 }
