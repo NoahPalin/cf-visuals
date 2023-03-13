@@ -6,17 +6,19 @@ An application that showcases my clients portfolio in a simple and clean way wit
 
 ### Portfolio Page
 
-![CF Visuals About Page](https://github.com/NoahPalin/cf-visuals/blob/main/src/components/images/readme-images/about.png)
+![CF Visuals Portfolio Page](https://github.com/NoahPalin/cf-visuals/blob/main/src/components/images/readme-images/portfolio.png)
 
 ### About Page
 
+![CF Visuals About Page](https://github.com/NoahPalin/cf-visuals/blob/main/src/components/images/readme-images/about.png)
 
 ### Footer
 
+![CF Visuals About Page](https://github.com/NoahPalin/cf-visuals/blob/main/src/components/images/readme-images/footer.png)
 
 ### Home Page
 
-![CF Visuals Portfolio Page]()
+![CF Visuals Home Page](https://github.com/NoahPalin/cf-visuals/blob/main/src/components/images/readme-images/home.png)
 
 ## Installation and Setup Instructions
 
