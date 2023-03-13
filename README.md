@@ -4,13 +4,19 @@ An application that showcases my clients portfolio in a simple and clean way wit
 
 ## Project Screen Shots
 
-![CF Visuals Landing Page](https://github.com/danielAwale/basketball-labs/blob/main/src/docs/project%20video%20demo.gif)
+### Portfolio Page
+
+![CF Visuals About Page]()
+
+### About Page
+
+
+### Footer
+
 
 ### Home Page
 
-![CF Visuals About Page](https://github.com/danielAwale/basketball-labs/blob/main/src/docs/mainpage.png)
-
-![CF Visuals Portfolio Page](https://github.com/danielAwale/basketball-labs/blob/main/src/docs/mainpage.png)
+![CF Visuals Portfolio Page]()
 
 ## Installation and Setup Instructions
 
