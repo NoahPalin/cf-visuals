@@ -6,7 +6,7 @@ An application that showcases my clients portfolio in a simple and clean way wit
 
 ### Portfolio Page
 
-![CF Visuals About Page]()
+![CF Visuals About Page](https://github.com/NoahPalin/cf-visuals/blob/main/src/components/images/readme-images/about.png)
 
 ### About Page
 
